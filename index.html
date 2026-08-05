@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEYPLUS Associates Vizag | Financial Advisory & Loan Services</title>
+    <meta name="description" content="Premier financial advisory and loan consultancy in Visakhapatnam. Personal loans, business loans, home loans, and insurance with fast approvals.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Glows -->
+  <div class="glow-orb glow-top"></div>
+  <div class="glow-orb glow-bottom"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+        <a href="#home" class="logo">
+          <div class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="brand-title">MONEY<span class="highlight">PLUS</span></span>
+            <span class="brand-sub">Associates Vizag</span>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#services">Loan Services</a>
+          <a href="#insurance">Insurance</a>
+          <a href="#callback">Callback Request</a>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+            <div class="badge-pill">
+              <span class="status-dot"></span>
+              <span>Trusted Advisory in Visakhapatnam</span>
+            </div>
+
+            <h1>Empowering <span class="gradient-text">Financial Growth</span> in Visakhapatnam</h1>
+            
+            <p class="hero-desc">
+              Unlocking hassle-free capital for your dreams. From low-interest personal & business loans to comprehensive family coverage, our Vizag experts deliver lightning-fast approvals.
+            </p>
+
+            <div class="stats-grid">
+              <div class="stat-box">
+                <h3 class="stat-number">₹50Cr+</h3>
+                <p class="stat-label">Loans Sanctioned</p>
+              </div>
+              <div class="stat-box">
+                <h3 class="stat-number">1200+</h3>
+                <p class="stat-label">Happy Clients</p>
+              </div>
+              <div class="stat-box">
+                <h3 class="stat-number">24h</h3>
+                <p class="stat-label">Avg Approval TAT</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="form-container" id="callback">
+          <div class="card form-card">
+            <div class="form-header">
+              <h3>Quick Callback Request</h3>
+              <p>Speak with a senior financial strategist today</p>
+            </div>
+
+            <form onsubmit="return false;">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <div class="input-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <input type="text" id="name" placeholder="e.g. Ramesh Varma" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <div class="input-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="service">Preferred Financial Service</label>
+                  <div class="input-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <select id="service" required>
+                      <option value="" disabled selected>Select a financial product</option>
+                      <option value="personal">Personal Loan</option>
+                      <option value="business">Business Loan</option>
+                      <option value="home">Home & Property Loan</option>
+                      <option value="insurance">Health & Life Insurance</option>
+                      <option value="mortgage">Mortgage Loan</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                  Request Free Call Back
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <p class="form-note">🔒 Your information is 100% confidential & encrypted.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-title text-center">
+            <span class="sub-title">TAILORED SOLUTIONS</span>
+            <h2>Loan & Insurance Advisory Services</h2>
+            <p>Flexible credit facilities with transparent pricing and personalized guidance tailored to Vizag entrepreneurs and families.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="card service-card">
+            <div class="card-header">
+                <div class="card-icon icon-indigo">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <span class="rate-badge badge-indigo">From 10.5% p.a.</span>
+            </div>
+            <h3>Personal Loan</h3>
+            <p>Instant liquidity for medical emergencies, travel, weddings, or debt consolidation with zero collateral requirement.</p>
+            <ul class="feature-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to ₹25 Lakhs loan amount</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Minimal document verification</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Tenure flexible up to 60 months</li>
+            </ul>
+            <a href="#callback" class="btn btn-outline btn-full">Apply Now / Enquire</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card service-card featured">
+            <div class="popular-tag">Most Popular</div>
+            <div class="card-header">
+                <div class="card-icon icon-emerald">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <span class="rate-badge badge-emerald">From 12.0% p.a.</span>
+            </div>
+            <h3>Business Loan</h3>
+            <p>Fuel your business expansion, working capital, inventory, or machinery acquisition in Visakhapatnam commercial zones.</p>
+            <ul class="feature-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Collateral-free credit lines</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom repayment structure</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Doorstep consultancy in Vizag</li>
+            </ul>
+            <a href="#callback" class="btn btn-primary btn-full">Apply Now / Enquire</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card service-card">
+            <div class="card-header">
+                <div class="card-icon icon-blue">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                </div>
+                <span class="rate-badge badge-blue">From 8.5% p.a.</span>
+            </div>
+            <h3>Home Loan</h3>
+            <p>Turn your homeownership dream into reality with lowest EMI options, balance transfer facilities, and legal checks.</p>
+            <ul class="feature-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 90% property funding</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Low interest balance transfer</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Property verification guidance</li>
+            </ul>
+            <a href="#callback" class="btn btn-outline btn-full">Apply Now / Enquire</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card service-card" id="insurance">
+            <div class="card-header">
+                <div class="card-icon icon-amber">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <span class="rate-badge badge-amber">Custom Plans</span>
+            </div>
+            <h3>Health & Life Insurance</h3>
+            <p>Safeguard your family's future with robust health policies, critical illness riders, and term insurance coverage.</p>
+            <ul class="feature-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Cashless hospital network</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Tax exemption under 80C & 80D</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Hassle-free claim settlement</li>
+            </ul>
+            <a href="#callback" class="btn btn-outline btn-full">Apply Now / Enquire</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+            <a href="#home" class="logo">
+              <div class="logo-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="brand-title">MONEY<span class="highlight">PLUS</span></span>
+                <span class="brand-sub">Associates Vizag</span>
+              </div>
+            </a>
+            <p class="footer-desc">
+              Visakhapatnam’s trusted credit and financial advisory partner. Delivering swift loans, competitive interest rates, and dedicated customer support.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Loan Services</h4>
+            <ul>
+              <li><a href="#services">Personal Loans</a></li>
+              <li><a href="#services">Business Capital Loans</a></li>
+              <li><a href="#services">Home & Housing Loans</a></li>
+              <li><a href="#services">Loan Against Property</a></li>
+              <li><a href="#insurance">Health & Life Insurance</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Vizag Branch Office</h4>
+            <div class="contact-list">
+              <div class="contact-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>50-81-5/2 MK Arcade, Seethampeta, Dwarakanagar, Visakhapatnam - 530016.<br><strong class="landmark">Landmark: Opp. DCB Bank</strong></span>
+              </div>
+              <div class="contact-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+91 891 2700 888 / +91 98480 12345</span>
+              </div>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Business Hours</h4>
+            <div class="hours-card">
+              <div class="hours-row">
+                <span>Monday - Saturday:</span>
+                <strong class="text-bright">10:00 - 18:00</strong>
+              </div>
+              <div class="hours-row">
+                <span>Sunday:</span>
+                <span class="text-closed">Closed</span>
+              </div>
+              <div class="hours-status">
+                <span class="dot-sm"></span> Advisory Team Available Today
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 MONEYPLUS Associates Vizag. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Widget -->
+  <div class="floating-widget">
+    <span class="tooltip">Need financial advice?</span>
+    <button class="chat-btn" aria-label="Open Chat Assistant">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span class="online-indicator"></span>
+    </button>
+  </div>
+
+</body>
+</html>
